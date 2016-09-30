@@ -13,6 +13,7 @@ using namespace std;
 int main(void)
 {
     Array arr(10);
-    cout<< arr.getlen() <<endl;
+    arr.printInfo().setlen(7).printInfo();
+  // cout<<"len = "<< arr.getlen() <<endl;
     return 0;
 }

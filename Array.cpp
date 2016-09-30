@@ -16,7 +16,7 @@ Array::Array(int len)
 
 Array::~Array()
 {}
-void Array::setlen(int len)
+Array& Array::setlen(int len)
 {
     this->len = len;
 }
@@ -24,6 +24,12 @@ void Array::setlen(int len)
 int Array::getlen()
 {
     return len;
+}
+
+Array &Array::printInfo()
+{
+    cout <<"len ="<<len<<endl;
+    return *this;
 }
 
 

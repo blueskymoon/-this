@@ -5,9 +5,9 @@ class Array
 public:
     Array(int len);
     ~Array();
-    void setlen(int len);
+    Array& setlen(int len);
     int getlen();
-    void printInfo();
+    Array& printInfo();
 private:
     int len;
 };
